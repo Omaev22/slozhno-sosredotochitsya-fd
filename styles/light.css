@@ -21,13 +21,12 @@
   --footer-logo-color: #ffc2e6;
 }
 
-/*.theme-light,
-.header__rec {
+.theme-light .header__rec {
   display: none;
-}*/
+}
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root.theme-auto {
   --accent-color: #ff8dcb;
   --main-bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
@@ -38,9 +37,8 @@
   --section-heading-color: #353430;
   --header-logo-color: #ffc2e6;
   --footer-logo-color: #ffc2e6;
+  .header__rec {
+    display: none;
+  }
   }
 }
-
-/*.header__rec {
-  display: none;
-}*/
